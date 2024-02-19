@@ -28,23 +28,36 @@ const Header = () => {
           </div>
 
           <div className="flex justify-center items-center">
-            <button className="flex justify-center items-center py-[12px] px-[25px] bg-[#FF385C]  text-[#fff] rounded-md max-sm:hidden">
+            <button
+              className=" py-[12px] px-[29px]   relative flex justify-center  
+              max-sm:hidden max-lg:hidden max-xl:hidden shadow-md items-center gap-1 hover:text-[black)] hover:before:translate-x-[105%]
+        overflow-hidden before:transition-transform
+        before:duration-[1s] ease-in-out text-white before:bg-[#FF385C] before:absolute
+        before:top-0 before:left-0 before:w-full before:h-full
+        transition-colors duration-[1s] before:z-[-1] z-[1]
+        hover:text-black rounded-[4px]
+         bg-[#fff]
+        h-11 text-[13px] font-medium"
+            >
               Sign-In
             </button>
           </div>
         </div>
 
-        <div className=" gap-7 flex justify-between items-center max-sm:gap-2">
+        <div className=" gap-7 flex justify-between items-center max-sm:gap-2 max-lg:gap-2 max-xl:gap-2">
           <div className="justify-center items-center flex rounded-[50%] text-[#FF385C] object-cover">
             <VscAccount size={25} />
           </div>
           <div className="justify-center items-center flex rounded-[50%] max-sm:hidden">
-            <VscHeartFilled size={25} className="text-[#FF385C]" />
+            <VscHeartFilled
+              size={25}
+              className="text-[#FF385C] max-lg:hidden max-xl:hidden"
+            />
           </div>
           <div className="justify-center items-center flex rounded-[50%] max-sm:flex">
             <MdOutlineShoppingCart size={25} className="text-[#FF385C]" />
           </div>
-          <div className="justify-center items-center flex rounded-[50%] max-sm:hidden">
+          <div className="justify-center items-center flex rounded-[50%] max-sm:hidden max-lg:hidden max-xl:hidden">
             <MdDarkMode size={25} />
           </div>
         </div>
