@@ -8,11 +8,11 @@ const Header = () => {
   return (
     <div className="w-full h-[11vh] justify-center items-center flex top-0 sticky shadow-md z-20">
       <div className="flex justify-between items-center bg-[] w-[93%] h-[7vh]">
-        <div className="w-[20%] flex bg-[#000]">
+        <div className="w-[20%] flex relative">
           <FaShopify size={36} className="text-[#FF385C]" />
           <GiShoppingCart
-            size={16}
-            className="text-[blue] inset-x-0 bottom-0"
+            size={18}
+            className="text-[#FF385C]  absolute mx-9 bottom-0"
           />
         </div>
 
