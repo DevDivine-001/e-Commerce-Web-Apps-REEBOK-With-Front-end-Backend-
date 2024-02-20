@@ -6,7 +6,7 @@ import { VscAccount, VscHeartFilled } from "react-icons/vsc";
 
 const Header = () => {
   return (
-    <div className="w-full h-[11vh] justify-center items-center flex top-0 sticky shadow-md z-20">
+    <div className="w-full h-[11vh] justify-center items-center flex top-0 sticky shadow-md bg-[#ffff]">
       <div className="flex justify-between items-center bg-[] w-[93%] h-[7vh]">
         <div className="w-[20%] flex relative">
           <FaShopify size={36} className="text-[#FF385C]" />
