@@ -1,9 +1,9 @@
 
 
-// const Addtocart = () => {
-//   return (
-//     <div>Addtocart</div>
-//   )
-// }
+const Addtocart = () => {
+  return (
+    <div>Addtocart</div>
+  )
+}
 
-// export default Addtocart
+export default Addtocart
