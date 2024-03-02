@@ -8,6 +8,8 @@ import Addtocart from "../Pages/Link/Addtocart";
 import Profile from "../Pages/Link/Profile";
 
 export const Router = createBrowserRouter([
+
+  
   {
     path: "/",
     element: <Layout />,
@@ -19,7 +21,9 @@ export const Router = createBrowserRouter([
       },
       {
         path: "/register-auth",
-        element: <Register />,
+        element: 
+          <Register/>,
+        
         index: true,
       },
       {

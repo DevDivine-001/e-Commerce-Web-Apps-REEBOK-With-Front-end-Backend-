@@ -1,8 +1,9 @@
-
 const Register = () => {
-  return (
-    <div>Register</div>
-  )
-}
+  return <>{
 
-export default Register
+        <div className="bg-black/50 z-50 backdrop-blur-sm h-[100vh]"></div>
+  }
+  </>;
+};
+
+export default Register;
