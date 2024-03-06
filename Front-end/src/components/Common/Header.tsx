@@ -1,4 +1,3 @@
-
 import { FaShopify } from "react-icons/fa";
 import { GiShoppingCart } from "react-icons/gi";
 import { MdDarkMode, MdOutlineShoppingCart } from "react-icons/md";
@@ -6,10 +5,14 @@ import { TfiSearch } from "react-icons/tfi";
 import { VscAccount, VscHeartFilled } from "react-icons/vsc";
 import { Link } from "react-router-dom";
 import Register from "../../auth/Register";
-
+import { useState } from "react";
 
 const Header = () => {
+  const [showModal, setShowModal]: any = useState<boolean>(false);
 
+ const openModal = () => {
+   setShowModal((prev:any) => !prev);
+ };
   return (
     <header className="w-full h-[11vh]  top-0 sticky shadow-md bg-[#ffff]">
       <div className="flex justify-center items-center w-[100%] h-[9vh]">
@@ -33,10 +36,7 @@ const Header = () => {
               />
             </div>
 
-            <Link
-              to="/"
-              className="flex justify-center items-center flex-col"
-            >
+            <div className="flex justify-center items-center flex-col">
               <button
                 className=" py-[11px] px-[28px]   relative flex justify-center  
               max-sm:hidden max-lg:hidden max-xl:hidden shadow-md items-center gap-1 hover:text-[black)] hover:before:translate-x-[105%]
@@ -47,10 +47,12 @@ const Header = () => {
         hover:text-black rounded-[4px]
          bg-[#fff]
         h-11 text-[13px] font-medium"
+                onClick={openModal}
               >
-              <Register />
+                Sign-In
+                {/* <Register /> */}
               </button>
-            </Link>
+            </div>
           </div>
 
           <div className=" gap-7 flex justify-between items-center max-sm:gap-2 max-lg:gap-2 max-xl:gap-2">
@@ -78,7 +80,7 @@ const Header = () => {
           </div>
         </div>
       </div>
-    
+      <Register showModal={showModal} setShowModal={setShowModal} />
     </header>
   );
 };

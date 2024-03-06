@@ -3,14 +3,17 @@
 // import { FaCartShopping } from "react-icons/fa6";
 // import { IoMdSearch } from "react-icons/io";
 
-
+import Hore from "./Hore";
+import Products from "./Products";
 
 const Homepage = () => {
   return (
-    <div className="bg-[red] w-[100%] h-[100vh] flex flex-col">
-
-   
-    </div>
+    <>
+      <div>
+        <Hore />
+        <Products />
+      </div>
+    </>
   );
 };
 

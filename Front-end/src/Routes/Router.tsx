@@ -6,10 +6,9 @@ import Login from "../auth/Login";
 import Save from "../Pages/Link/Save";
 import Addtocart from "../Pages/Link/Addtocart";
 import Profile from "../Pages/Link/Profile";
+import SeeProducts from "../Pages/Home/SeeProducts";
 
 export const Router = createBrowserRouter([
-
-  
   {
     path: "/",
     element: <Layout />,
@@ -21,9 +20,8 @@ export const Router = createBrowserRouter([
       },
       {
         path: "/register-auth",
-        element: 
-          <Register/>,
-        
+        element: <Register />,
+
         index: true,
       },
       {
@@ -39,6 +37,11 @@ export const Router = createBrowserRouter([
       {
         path: "/add-to-cart",
         element: <Addtocart />,
+        index: true,
+      },
+      {
+        path: "/seeproducts",
+        element: <SeeProducts />,
         index: true,
       },
       {
