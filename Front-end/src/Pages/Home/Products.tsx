@@ -7,19 +7,65 @@ const Products = () => {
   return (
     <div className="flex justify-center items-center w-[100%] h-[92vh] bg-[red]">
       <div
-        className="w-[93%] h-[82vh] bg-[#fff] p-3 rounded-md"
+        className="w-[93%] h-[82vh] bg-[#fff] p-2 rounded-[7px] flex gap-4"
         data-aos-duration="500"
         data-aos-once="true"
       >
-        <div className="flex flex-col bg-[green] w-[16%] h-[35vh] p-2 rounded-md">
-          <div className="w-full h-[400px] flex justify-center items-center bg-[#fff] rounded-md"></div>
-          <button onClick={() => setOpen(true)}>View Products</button>
+        <div className="flex flex-col bg-[green] w-[16%] h-[36vh] p-2 rounded-[7px] gap-2 hover:shadow-md hover:transition-transform delay-200 hover:scale-90 hover:">
+          <div className="w-full h-[250px] flex justify-center items-center bg-[#fff] rounded-md"></div>
+          <button onClick={() => setOpen(true)}>Best Deals</button>
           <Modal open={open} onClose={() => setOpen(false)}>
             <form action="" className="w-[60%] h-[66vh] bg-[red]">
               <Link to="/seeproducts">SeeProducts</Link>
             </form>
           </Modal>
         </div>
+        <div className="flex flex-col bg-[green] w-[16%] h-[36vh] p-2 rounded-[7px] gap-2 hover:shadow-md hover:transition-transform delay-200 hover:scale-90 hover:">
+          <div className="w-full h-[250px] flex justify-center items-center bg-[#fff] rounded-md"></div>
+          <button onClick={() => setOpen(true)}>Best Deals</button>
+          <Modal open={open} onClose={() => setOpen(false)}>
+            <form action="" className="w-[60%] h-[66vh] bg-[red]">
+              <Link to="/seeproducts">SeeProducts</Link>
+            </form>
+          </Modal>
+        </div>
+        <div className="flex flex-col bg-[green] w-[16%] h-[36vh] p-2 rounded-[7px] gap-2 hover:shadow-md hover:transition-transform delay-200 hover:scale-90 hover:">
+          <div className="w-full h-[250px] flex justify-center items-center bg-[#fff] rounded-md"></div>
+          <button onClick={() => setOpen(true)}>Best Deals</button>
+          <Modal open={open} onClose={() => setOpen(false)}>
+            <form action="" className="w-[60%] h-[66vh] bg-[red]">
+              <Link to="/seeproducts">SeeProducts</Link>
+            </form>
+          </Modal>
+        </div>
+        <div className="flex flex-col bg-[green] w-[16%] h-[36vh] p-2 rounded-[7px] gap-2 hover:shadow-md hover:transition-transform delay-200 hover:scale-90 hover:">
+          <div className="w-full h-[250px] flex justify-center items-center bg-[#fff] rounded-md"></div>
+          <button onClick={() => setOpen(true)}>Best Deals</button>
+          <Modal open={open} onClose={() => setOpen(false)}>
+            <form action="" className="w-[60%] h-[66vh] bg-[red]">
+              <Link to="/seeproducts">SeeProducts</Link>
+            </form>
+          </Modal>
+        </div>
+        <div className="flex flex-col bg-[green] w-[16%] h-[36vh] p-2 rounded-[7px] gap-2 hover:shadow-md hover:transition-transform delay-200 hover:scale-90 hover:">
+          <div className="w-full h-[250px] flex justify-center items-center bg-[#fff] rounded-md"></div>
+          <button onClick={() => setOpen(true)}>Best Deals</button>
+          <Modal open={open} onClose={() => setOpen(false)}>
+            <form action="" className="w-[60%] h-[66vh] bg-[red]">
+              <Link to="/seeproducts">SeeProducts</Link>
+            </form>
+          </Modal>
+        </div>
+        <div className="flex flex-col bg-[green] w-[16%] h-[36vh] p-2 rounded-[7px] gap-2 hover:shadow-md hover:transition-transform delay-200 hover:scale-90 hover:">
+          <div className="w-full h-[250px] flex justify-center items-center bg-[#fff] rounded-md"></div>
+          <button onClick={() => setOpen(true)}>Best Deals</button>
+          <Modal open={open} onClose={() => setOpen(false)}>
+            <form action="" className="w-[60%] h-[66vh] bg-[red]">
+              <Link to="/seeproducts">SeeProducts</Link>
+            </form>
+          </Modal>
+        </div>
+  
       </div>
     </div>
   );

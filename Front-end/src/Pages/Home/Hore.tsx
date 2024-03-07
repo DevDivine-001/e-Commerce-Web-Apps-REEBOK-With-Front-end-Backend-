@@ -1,6 +1,6 @@
 const Hore = () => {
   return (
-    <div className="flex justify-center items-center w-[100%] h-[89vh] bg-[blue]">
+    <div className="flex justify-center items-center w-[100%] h-[89vh] bg-[]">
       <div
         className="w-[93%] h-[82vh] bg-[yellow] p-7 flex"
         data-aos-duration="500"

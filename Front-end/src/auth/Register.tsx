@@ -80,6 +80,7 @@ const Register = ({ showModal, setShowModal }: any) => {
               >
                 Continue
               </button>
+              
               <button
                 className=" py-[11px] px-[28px]   relative flex justify-center
                   max-sm:hidden max-lg:hidden max-xl:hidden shadow-md items-center gap-1 hover:text-[black)] hover:before:translate-x-[105%]
