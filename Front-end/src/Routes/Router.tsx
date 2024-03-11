@@ -7,6 +7,7 @@ import Save from "../Pages/Link/Save";
 import Addtocart from "../Pages/Link/Addtocart";
 import Profile from "../Pages/Link/Profile";
 import SeeProducts from "../Pages/Home/SeeProducts";
+import ResetPassword from "../auth/ResetPassword";
 
 export const Router = createBrowserRouter([
   {
@@ -27,6 +28,11 @@ export const Router = createBrowserRouter([
       {
         path: "/login-auth",
         element: <Login />,
+        index: true,
+      },
+      {
+        path: "/resetpassword-auth",
+        element: <ResetPassword />,
         index: true,
       },
       {

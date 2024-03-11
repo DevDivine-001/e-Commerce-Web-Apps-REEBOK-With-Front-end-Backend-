@@ -1,8 +1,6 @@
-
-
 import { AiFillGithub } from "react-icons/ai";
 import { FcGoogle } from "react-icons/fc";
-
+import { Link } from "react-router-dom";
 
 const Login = ({ showModa, setShowModa }: any) => {
   return (
@@ -14,7 +12,7 @@ const Login = ({ showModa, setShowModa }: any) => {
           }`}
         >
           <form
-            className="bg-[#fff] h-auto w-[40%] z-10 relative flex-col flex gap-6 p-2 rounded-md items-center "
+            className="bg-[#fff] h-auto w-[35%] z-10 relative flex-col flex gap-6 p-2 rounded-md items-center "
             data-aos="zoom-in"
             data-aos-duration="600"
             data-aos-once="true"
@@ -36,7 +34,7 @@ const Login = ({ showModa, setShowModa }: any) => {
                 Login to your account!
               </span>
             </div>
-            <div className="flex absolute top-0 ml-[510px]">
+            <div className="flex absolute top-0 ml-[450px]">
               {" "}
               <button
                 onClick={() => setShowModa((prev: any) => !prev)}
@@ -46,15 +44,22 @@ const Login = ({ showModa, setShowModa }: any) => {
               </button>
             </div>
 
-            <input
-              type="text"
-              className="p-3 rounded-md border outline-none w-[93%]"
-            />
+            <div className="gap-3 flex flex-col w-[93%]">
+              <input
+                type="email"
+                className="p-3 rounded-md border outline-none"
+                placeholder="Email"
+              />
 
-            <input
-              type="text"
-              className="p-3 rounded-md border outline-none w-[93%]"
-            />
+              <input
+                type="password"
+                className="p-3 rounded-md border outline-none"
+                placeholder="Password"
+              />
+              <div className="flex justify-end items-center  w-[%]">
+                <Link to="/resetpassword-auth">Reset Password</Link>
+              </div>
+            </div>
 
             <div className="flex flex-col gap-3 w-[93%]">
               <button

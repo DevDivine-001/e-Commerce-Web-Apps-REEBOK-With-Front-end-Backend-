@@ -6,27 +6,21 @@
 import Banner from "./Banner";
 import Hore from "./Hore";
 import Products from "./Products";
-import backgroundImage from "../../assets/bg-1.3d2a7a2d0a1ed5a6e5b206301d008f80 (1).svg"
+import Image from "../../assets/bg-1.3d2a7a2d0a1ed5a6e5b206301d008f80.svg";
 
 const Homepage = () => {
-  const Image:any = {
-    backgroundImage: `url(${backgroundImage})`,
-    backgroundPosition: "center",
-    backgroundRepeat:"no-repeat",
-    backgroundSize: "cover",
-    height: "auto",
-    width: "100%",
-
-  };
-
   return (
-    <>
-      <div style={{ Image}}>
-        <Hore />
-        <Products />
-        <Banner />
-      </div>
-    </>
+    <div
+      className="bg-[#fff]
+    "
+      style={{
+        backgroundImage: `url(${Image})`,
+      }}
+    >
+      <Hore />
+      <Products />
+      <Banner />
+    </div>
   );
 };
 

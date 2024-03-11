@@ -19,7 +19,7 @@ const Register = ({ showModal, setShowModal }: any) => {
           }`}
         >
           <form
-            className="bg-[#fff] h-auto w-[40%] z-10 relative flex-col flex gap-6 p-2 rounded-md items-center "
+            className="bg-[#fff] h-auto w-[35%] z-10 relative flex-col flex gap-5 p-2 rounded-md items-center"
             data-aos="zoom-in"
             data-aos-duration="600"
             data-aos-once="true"
@@ -41,32 +41,35 @@ const Register = ({ showModal, setShowModal }: any) => {
                 Create an account!
               </span>
             </div>
-            <div className="flex absolute top-0 ml-[510px]">
+            <div className="flex absolute top-0 ml-[450px]">
               {" "}
               <button
                 onClick={() => setShowModal((prev: any) => !prev)}
-                className="p-2 justify-center items-center flex"
+                className="p-2 justify-center items-center flex text-[20px]"
               >
                 X
               </button>
             </div>
 
             <input
-              type="text"
+              type="email"
               className="p-3 rounded-md border outline-none w-[93%]"
+              placeholder="Email"
             />
             <input
-              type="text"
+              type="name"
               className="p-3 rounded-md border outline-none w-[93%]"
+              placeholder="UserName"
             />
             <input
-              type="text"
+              type="password"
               className="p-3 rounded-md border outline-none w-[93%]"
+              placeholder="Password"
             />
 
             <div className="flex flex-col gap-3 w-[93%]">
               <button
-                className=" py-[11px] px-[28px] relative flex justify-center
+                className=" py-[11px] px-[28px]   relative flex justify-center
                   max-sm:hidden max-lg:hidden max-xl:hidden shadow-md items-center gap-1 hover:text-[black)] hover:before:translate-x-[105%]
             overflow-hidden before:transition-transform
             before:duration-[1s] ease-in-out text-white before:bg-[#FF385C] before:absolute
@@ -74,13 +77,10 @@ const Register = ({ showModal, setShowModal }: any) => {
             transition-colors duration-[1s] before:z-[-1] z-[1]
             hover:text-black rounded-[4px]
              bg-[#fff]
-            h-11 text-[15px] font-bold disabled:cursor-not-allowed
-            disabled:opacity-70
-            hover:opacity-80"
+            h-11 text-[15px] font-bold disabled:cursor-not-allowed"
               >
-                Continue
+                <span> Continue</span>
               </button>
-              
               <button
                 className=" py-[11px] px-[28px]   relative flex justify-center
                   max-sm:hidden max-lg:hidden max-xl:hidden shadow-md items-center gap-1 hover:text-[black)] hover:before:translate-x-[105%]

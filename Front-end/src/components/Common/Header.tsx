@@ -10,13 +10,13 @@ import { useState } from "react";
 const Header = () => {
   const [showModal, setShowModal]: any = useState<boolean>(false);
 
- const openModal = () => {
-   setShowModal((prev:any) => !prev);
- };
+  const openModal = () => {
+    setShowModal((prev: any) => !prev);
+  };
   return (
-    <header className="w-full h-[11vh]  top-0 sticky shadow-md bg-[#ffff]">
-      <div className="flex justify-center items-center w-[100%] h-[9vh]">
-        <div className="flex justify-between items-center bg-[] w-[93%] h-[7vh]">
+    <header className="w-full h-[11vh] top-0 sticky shadow-md z-50 bg-[#ffff]">
+      <div className="flex justify-center items-center w-[100%] h-[10vh]">
+        <div className="flex justify-between items-center bg-[] w-[93%] h-[10vh]">
           <Link to="/" className="w-[20%] flex relative">
             <FaShopify size={37} className="text-[#FF385C]" />
             <GiShoppingCart
@@ -25,7 +25,7 @@ const Header = () => {
             />
           </Link>
 
-          <div className="w-[53%] h-[7vh] bg-[] flex justify-between items-center ">
+          <div className="w-[53%] h-[10vh] bg-[] flex justify-between items-center ">
             <div className="w-[84%] flex h-[7vh] bg-[#fff] rounded-md border items-center p-1">
               <div className="flex items-center justify-center">
                 <TfiSearch size={23} className="text-[silver]" />
