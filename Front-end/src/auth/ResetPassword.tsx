@@ -1,4 +1,4 @@
-import  Image from  "../assets/bg-1.3d2a7a2d0a1ed5a6e5b206301d008f80.svg"
+import Image from "../assets/bg-1.3d2a7a2d0a1ed5a6e5b206301d008f80.svg";
 
 const ResetPassword = () => {
   return (
@@ -11,7 +11,7 @@ const ResetPassword = () => {
     >
       <div className="w-[93%] h-[82vh] bg-[] flex justify-center items-center">
         <form
-          className="bg-[#fff] h-auto w-[38%]  flex-col flex gap-4 p-3 rounded-md items-center shadow-md"
+          className="bg-[#fff] h-[50vh] w-[38%]  flex-col flex gap-4 p-3 rounded-md items-center shadow-md max-sm:w-full"
           data-aos="zoom-in"
           data-aos-duration="600"
           data-aos-once="true"
@@ -43,7 +43,7 @@ const ResetPassword = () => {
             </button>
           </div>
 
-          <div className="gap-3 flex flex-col w-[93%]">
+          <div className="gap-3 flex flex-col w-[93%] max-sm:w-full">
             <input
               type="email"
               className="p-3 rounded-md border outline-none"
@@ -58,10 +58,10 @@ const ResetPassword = () => {
             <div className="flex justify-end items-center  w-[%]"></div>
           </div>
 
-          <div className="flex flex-col gap-3 w-[93%]">
+          <div className="flex flex-col gap-3 w-[93%] max-sm:w-full">
             <button
               className=" py-[11px] px-[28px] relative flex justify-center
-                  max-sm:hidden max-lg:hidden max-xl:hidden shadow-md items-center gap-1 hover:text-[black)] hover:before:translate-x-[105%]
+                   max-lg:flex max-xl:flex shadow-md items-center gap-1 hover:text-[black)] hover:before:translate-x-[105%]
             overflow-hidden before:transition-transform
             before:duration-[1s] ease-in-out text-white before:bg-[#FF385C] before:absolute
             before:top-0 before:left-0 before:w-full before:h-full
@@ -70,7 +70,7 @@ const ResetPassword = () => {
              bg-[#fff]
             h-11 text-[15px] font-bold disabled:cursor-not-allowed
             disabled:opacity-70
-            hover:opacity-80"
+            hover:opacity-80 max-sm:flex"
             >
               Continue
             </button>
