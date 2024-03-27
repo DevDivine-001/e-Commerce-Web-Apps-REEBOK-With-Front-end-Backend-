@@ -11,15 +11,15 @@ const ResetPassword = () => {
     >
       <div className="w-[93%] h-[82vh] bg-[] flex justify-center items-center">
         <form
-          className="bg-[#fff] h-[50vh] w-[38%]  flex-col flex gap-4 p-3 rounded-md items-center shadow-md max-sm:w-full"
+          className="bg-[#fff] h-[] w-[38%]  flex-col flex gap-6 p-3 rounded-md items-center shadow-md max-sm:w-full max-md:w-full max-lg:w-full max-xl:w-full"
           data-aos="zoom-in"
           data-aos-duration="600"
           data-aos-once="true"
         >
-          <h1 className="w-full h-[7vh] bg-[] flex items-center justify-center border-bottom text-2xl font-extrabold">
-            Reset Password
-          </h1>
-          <div className="flex-col w-full h-auto gap-2 bg-[] flex items-center justify-center ">
+          <div className="flex-col w-full h-auto gap-3 bg-[] flex items-center justify-center ">
+            <h1 className="w-full h-[7vh] bg-[] flex items-center justify-center border-bottom text-2xl font-extrabold">
+              Reset Password
+            </h1>
             {/* <span
             className="text-2xl
           font-bold"
@@ -43,7 +43,7 @@ const ResetPassword = () => {
             </button>
           </div>
 
-          <div className="gap-3 flex flex-col w-[93%] max-sm:w-full">
+          <div className="gap-5 flex flex-col w-[93%] max-sm:w-full">
             <input
               type="email"
               className="p-3 rounded-md border outline-none"

@@ -6,9 +6,15 @@ const Banner = () => {
     },
   ];
   return (
-    <div className="w-[100%] h-[50vh] flex justify-center items-center max-sm:h-[99px]">
+    <div className="w-[100%] h-[50vh] flex justify-center items-center max-sm:h-[99px]"
+    >
       {Bannerimg.map((data) => (
-        <div className="bg-[#fff] flex items-center justify-center w-[93%] rounded-[7px] p-2 shadow-md max-sm:h-[90px]">
+        <div className="bg-[#fff] flex items-center justify-center w-[93%] rounded-[7px] p-2 shadow-md max-sm:h-[90px]"
+        
+       data-aos="flip-up"
+            data-aos-duration="600"
+            data-aos-once="true"
+        >
           <img
             src={data.imgBanner}
             alt=""

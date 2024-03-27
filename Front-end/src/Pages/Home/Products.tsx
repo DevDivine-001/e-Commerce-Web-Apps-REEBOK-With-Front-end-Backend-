@@ -50,8 +50,12 @@ const Products = () => {
           </Modal>
         </div>
         <div className="flex flex-col bg-[green] w-[16%] h-[36vh] p-2 rounded-[7px] gap-2 hover:shadow-md hover:transition-transform delay-200 hover:scale-90 hover:">
-          <div className="w-full h-[250px] flex justify-center items-center bg-[#fff] rounded-md"></div>
-          <button onClick={() => setOpen(true)}>Best Deals</button>
+          <div className="w-full h-[250px] flex justify-center items-center bg-[#fff] rounded-md
+          "></div>
+          <button onClick={() => setOpen(true)}
+          className=""
+          
+          >Best Deals</button>
           <Modal open={open} onClose={() => setOpen(false)}>
             <form action="" className="w-[60%] h-[66vh] bg-[red]">
               <Link to="/seeproducts">SeeProducts</Link>
