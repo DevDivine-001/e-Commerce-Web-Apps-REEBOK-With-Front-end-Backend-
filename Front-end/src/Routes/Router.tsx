@@ -4,10 +4,11 @@ import Homepage from "../Pages/Home/Homepage";
 import Register from "../auth/Register";
 import Login from "../auth/Login";
 import Save from "../Pages/Link/Save";
-import Addtocart from "../Pages/Link/Addtocart";
+
 import Profile from "../Pages/Link/Profile";
 import SeeProducts from "../Pages/Home/SeeProducts";
 import ResetPassword from "../auth/ResetPassword";
+import Add from "../Pages/Link/Add";
 
 export const Router = createBrowserRouter([
   {
@@ -31,7 +32,7 @@ export const Router = createBrowserRouter([
         index: true,
       },
       {
-        path: "/resetpassword-auth",
+        path: "/reset-password-auth",
         element: <ResetPassword />,
         index: true,
       },
@@ -42,11 +43,11 @@ export const Router = createBrowserRouter([
       },
       {
         path: "/add-to-cart",
-        element: <Addtocart />,
+        element: <Add/>,
         index: true,
       },
       {
-        path: "/seeproducts",
+        path: "/see-products",
         element: <SeeProducts />,
         index: true,
       },
