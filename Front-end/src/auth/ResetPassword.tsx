@@ -36,7 +36,7 @@ const ResetPassword = () => {
           <div className="flex absolute top-0 ml-[450px]">
             {" "}
             <button
-              // onClick={() => setShowModa((prev: any) => !prev)}
+      
               className="p-2 justify-center items-center flex"
             >
               X
@@ -76,26 +76,7 @@ const ResetPassword = () => {
             </button>
           </div>
 
-          {/* <div className="flex gap-2 font-bold text-[15px]">
-          <span
-            className=" text-neutral-500
-        text-center
-        font-light"
-          >
-            Already have an account
-          </span>
-          <span
-            className="
-                  text-neutral-800
-        cursor-pointer
-        hover:underline
-                "
-          >
-            <div onClick={() => setShowModa((prev: any) => !prev)}>
-              Register
-            </div>
-          </span>
-        </div> */}
+
         </form>
       </div>
     </div>

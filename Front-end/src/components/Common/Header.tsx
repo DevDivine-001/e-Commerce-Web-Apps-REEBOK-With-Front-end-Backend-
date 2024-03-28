@@ -7,11 +7,13 @@ import { Link } from "react-router-dom";
 import Register from "../../auth/Register";
 import { useState } from "react";
 
+
+
 const Header = () => {
-  const [showModal, setShowModal]: any = useState<boolean>(false);
+  const [showModal, setShowModal] = useState<boolean>(false);
 
   const openModal = () => {
-    setShowModal((prev: any) => !prev);
+    setShowModal((prev) => !prev);
   };
   return (
   <div>

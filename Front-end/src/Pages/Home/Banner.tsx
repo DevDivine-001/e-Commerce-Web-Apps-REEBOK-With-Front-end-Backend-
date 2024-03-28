@@ -1,14 +1,14 @@
-import bannerimg from "../../assets/Desktop_Single_Banner__1152x252.png";
+import bannerI from "../../assets/Desktop_Single_Banner__1152x252.png";
 const Banner = () => {
-  const Bannerimg = [
+  const BannerI = [
     {
-      imgBanner: bannerimg,
+      imgBanner: bannerI,
     },
   ];
   return (
     <div className="w-[100%] h-[50vh] flex justify-center items-center max-sm:h-[99px]"
     >
-      {Bannerimg.map((data) => (
+      {BannerI.map((data) => (
         <div className="bg-[#fff] flex items-center justify-center w-[93%] rounded-[7px] p-2 shadow-md max-sm:h-[90px]"
         
        data-aos="flip-up"

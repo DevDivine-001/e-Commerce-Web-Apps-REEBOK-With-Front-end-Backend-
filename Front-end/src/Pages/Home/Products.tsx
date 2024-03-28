@@ -18,7 +18,7 @@ const Products = () => {
           <button onClick={() => setOpen(true)}>Best Deals</button>
           <Modal open={open} onClose={() => setOpen(false)}>
             <form action="" className="w-[60%] h-[66vh] bg-[red]">
-              <Link to="/seeproducts">SeeProducts</Link>
+              <Link to="/see-products">SeeProducts</Link>
             </form>
           </Modal>
         </div>
@@ -27,7 +27,7 @@ const Products = () => {
           <button onClick={() => setOpen(true)}>Best Deals</button>
           <Modal open={open} onClose={() => setOpen(false)}>
             <form action="" className="w-[60%] h-[66vh] bg-[red]">
-              <Link to="/seeproducts">SeeProducts</Link>
+              <Link to="/see-products">SeeProducts</Link>
             </form>
           </Modal>
         </div>
@@ -36,7 +36,7 @@ const Products = () => {
           <button onClick={() => setOpen(true)}>Best Deals</button>
           <Modal open={open} onClose={() => setOpen(false)}>
             <form action="" className="w-[60%] h-[66vh] bg-[red]">
-              <Link to="/seeproducts">SeeProducts</Link>
+              <Link to="/see-products">SeeProducts</Link>
             </form>
           </Modal>
         </div>
@@ -45,7 +45,7 @@ const Products = () => {
           <button onClick={() => setOpen(true)}>Best Deals</button>
           <Modal open={open} onClose={() => setOpen(false)}>
             <form action="" className="w-[60%] h-[66vh] bg-[red]">
-              <Link to="/seeproducts">SeeProducts</Link>
+              <Link to="/see-products">SeeProducts</Link>
             </form>
           </Modal>
         </div>
@@ -58,7 +58,7 @@ const Products = () => {
           >Best Deals</button>
           <Modal open={open} onClose={() => setOpen(false)}>
             <form action="" className="w-[60%] h-[66vh] bg-[red]">
-              <Link to="/seeproducts">SeeProducts</Link>
+              <Link to="/see-products">SeeProducts</Link>
             </form>
           </Modal>
         </div>

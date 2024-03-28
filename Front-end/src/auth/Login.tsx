@@ -4,10 +4,10 @@ import { Link } from "react-router-dom";
 
   // const [showModal, setShowModal] = useState(false)
 
-const Login = ({ showcome, setshowcome }: any) => {
+const Login = ({ showModa, setShowModa }: any) => {
   return (
     <>
-      {showcome && (
+      {showModa && (
         <div
           className={`fixed inset-0 flex justify-center items-center transition-colors ${
             open ? "visible bg-black/20 z-50 backdrop-blur-sm" : "invisible"
@@ -39,7 +39,7 @@ const Login = ({ showcome, setshowcome }: any) => {
             <div className="flex absolute top-0 ml-[450px]">
               {" "}
               <button
-                onClick={() => setshowcome((prev: any) => !prev)}
+                onClick={() => setShowModa((prev: any) => !prev)}
                 className="p-2 justify-center items-center flex"
               >
                 X
@@ -91,7 +91,7 @@ const Login = ({ showcome, setshowcome }: any) => {
             h-11 text-[15px] font-bold disabled:cursor-not-allowed"
               >
                 <FcGoogle size={20} className="text-2xl" />
-                <span> Continue with Google</span>
+                <span> Continue with Goolge</span>
               </button>
               <button
                 className=" py-[11px] px-[28px]   relative flex justify-center
