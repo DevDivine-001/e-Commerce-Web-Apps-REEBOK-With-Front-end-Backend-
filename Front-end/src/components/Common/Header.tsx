@@ -16,7 +16,7 @@ const Header = () => {
     setShowModal((prev) => !prev);
   };
   return (
-  <div>
+
      <header className="w-full h-[11vh] top-0 sticky shadow-md z-50 bg-[#ffff]">
       <div className="flex justify-center items-center w-[100%] h-[10vh]">
         <div className="flex justify-between items-center bg-[] w-[93%] h-[10vh]">
@@ -85,7 +85,6 @@ const Header = () => {
       </div>
       <Register showModal={showModal} setShowModal={setShowModal} />
     </header>
-  </div>
   );
 };
 

@@ -1,6 +1,6 @@
 type propTypes = {
   open: boolean;
-  onClose: () => any;
+  onClose: () => string;
   children: React.ReactNode;
 };
 
