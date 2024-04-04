@@ -13,7 +13,7 @@ const ResetPassword = () => {
         <form
           className="bg-[#fff] h-[] w-[38%]  flex-col flex gap-6 p-3 rounded-md items-center shadow-md max-sm:w-full max-md:w-full max-lg:w-full max-xl:w-full"
           data-aos="zoom-in"
-          data-aos-duration="600"
+          data-aos-duration="1000"
           data-aos-once="true"
         >
           <div className="flex-col w-full h-auto gap-3 bg-[] flex items-center justify-center ">

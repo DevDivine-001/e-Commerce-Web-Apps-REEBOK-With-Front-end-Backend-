@@ -21,7 +21,7 @@ const Register = ({ showModal, setShowModal }: any) => {
           <form
             className="bg-[#fff] h-auto w-[35%] z-10 relative flex-col flex gap-5 p-2 rounded-md items-center"
             data-aos="zoom-in"
-            data-aos-duration="600"
+            data-aos-duration="1000"
             data-aos-once="true"
           >
             <h1 className="w-full h-[7vh] bg-[] flex items-center justify-center border-bottom text-2xl font-extrabold">
