@@ -1,42 +1,47 @@
 import   {FaShopify}  from "react-icons/fa";
 
 const productIcons = [
-{
-    id: 1,
-    text: "Phone & Table"
+
+    {
+    id:1,
+    text: "Fashion"
 },
 {
-    id: 2,
-    text: "Appliances"
+    id:2,
+    text: "Gaming"
 },
-{
+    {
     id: 3,
-    text: "Electronics"
-},
-{
-    id: 4,
-    text: "Supermarket"
-},
-{
-    id: 5,
-    text: "Health & Beauty"
-},
-{
-    id: 6,
-    text: "Home & Office"
-},
-{
-    id: 7,
     text: "Power"
 },
 {
-    id: 8,
+    id: 4,
     text: "Computing"
 },
+
 {
-    id:9,
-    text: "Women's Fashion"
+    id: 5,
+    text: "Appliances"
 },
+{
+    id: 6,
+    text: "Electronics"
+},
+{
+    id: 7,
+    text: "Supermarket"
+},
+{
+    id: 8,
+    text: "Phone & Table"
+},
+
+{
+    id: 9,
+    text: "Home & Office"
+},
+
+
 {
     id:10,
     text: "Men's Fashion"
@@ -45,20 +50,25 @@ const productIcons = [
     id:11,
     text: "Baby Products"
 },
+
 {
     id:12,
-    text: "Phone & Table"
+    text: "Sporting Goods"
 },
 {
-    id:12,
-    text: "Phone & Table"
+    id: 13,
+    text: "Health & Beauty"
+},
+{
+    id:14,
+    text: "Women's Fashion"
 },
 
 ]
 
 const ProductsNavLink = () => {
   return (
-    <div className="flex w-[17%] bg-[#fff] rounded-[7px] shadow-md gap-[17px] flex-col p-2 max-sm:hidden max-md:hidden max-lg:hidden max-xl:hidden" data-aos="fade-right"
+    <div className="flex w-[17%] bg-[#fff] rounded-[7px] shadow-md gap-[14px] flex-col p-2 max-sm:hidden max-md:hidden max-lg:hidden max-xl:hidden" data-aos="fade-right"
      data-aos-duration="2000"
             data-aos-once="true">
    {
