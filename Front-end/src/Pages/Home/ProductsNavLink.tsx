@@ -68,8 +68,8 @@ const productIcons = [
 
 const ProductsNavLink = () => {
   return (
-    <div className="flex w-[17%] bg-[#fff] rounded-[7px] shadow-md gap-[14px] flex-col p-2 max-sm:hidden max-md:hidden max-lg:hidden max-xl:hidden" data-aos="fade-right"
-     data-aos-duration="2000"
+    <div className="flex w-[17%] bg-[#fff] rounded-[7px] border-none shadow-md gap-[14px] flex-col p-2 max-sm:hidden max-md:hidden max-lg:hidden max-xl:hidden" data-aos="fade-right"
+     data-aos-duration="1500"
             data-aos-once="true">
    {
     productIcons.map((data) => (

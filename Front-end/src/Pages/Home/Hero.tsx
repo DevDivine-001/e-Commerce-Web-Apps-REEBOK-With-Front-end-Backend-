@@ -1,10 +1,8 @@
 import InfoBox from "./InfoBox";
 import ProductsNavLink from "./ProductsNavLink";
+import Sliders from "./sliders";
 
 
-import Slider from "./slider";
-
-// import image from "../../assets"
 const Hero = () => {
   return (
     <div
@@ -14,12 +12,11 @@ const Hero = () => {
         <div className="w-[93%] h-[82vh] bg-[] flex
       justify-between">
           <ProductsNavLink/>
-          <Slider/>
+          <Sliders/>
          <InfoBox/>
         </div>
       </div>
     </div>
   );
 };
-
 export default Hero;
