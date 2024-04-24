@@ -5,10 +5,10 @@ import image3 from "../../assets/712x384copy2-treasurehunt.jpeg"
 import image4 from "../../assets/slider.jpeg"
 import image5 from "../../assets/pexels-pavel-danilyuk-8638226.jpg"
 import image6 from "../../assets/Desktop_Homepage_Slider__712x384.png"
-import image7 from "../../assets/Desktop_Homepage_Slider__712x384 (3).png"
-import image8 from "../../assets/712x384copy-3.jpeg"
-import image9 from "../../assets/newer-712x384.png"
-import image10 from "../../assets/pexels-andrea-piacquadio-994234.jpg"
+import image7 from "../../assets/Desktop_Homepage_Slider__712x384 (3).png";
+import image8 from "../../assets/712x384copy-3.jpeg";
+import image9 from "../../assets/newer-712x384.png";
+import image10 from "../../assets/pexels-andrea-piacquadio-994234.jpg";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 
@@ -59,17 +59,17 @@ const imagesSlider = [
 const Sliders = () => {
 
     const settings = {
-        dots: true,
-        Infinite: true,
-        fade: true,
-        arrows:false,
-        speed: 1000,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 7000,
-        cssEase: "ease-in-out",
-        pauseOnHover: false,
-        pauseOnFocus: true,
+            dots: true,
+            infinite: true,
+            autoplay: true,
+            autoplaySpeed: 6000,
+            speed: 3000,
+            fade:true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            cssEase: "ease-in-out",
+            pauseOnHover: false,
+            pauseOnFocus: true,
     }
   return (
 
@@ -77,14 +77,14 @@ const Sliders = () => {
    data-aos="zoom-in"
      data-aos-duration="1500"
             data-aos-once="true"
-           className="w-[64%] h-full bg-[#ffff] border-none shadow-md max-sm:w-full max-md:w-full max-lg:w-full max-xl:w-full"
+           className="w-[64%] h-full bg-[#ffff] border-none shadow-md max-sm:w-full max-md:w-full max-lg:w-full max-xl:w-full flex "
 >
 
  <Slider {...settings}  className="w-[100%] h-[77vh] bg-[] object-cover border-none "
 
 >
 {imagesSlider.map((data) =>(
-  <img key={data.id} src={data.imag}  className="w-full h-[82vh] rounded-[7px] shadow-md flex justify-center items-center  border-none cursor-pointer"
+  <img key={data.id} src={data.imag}  className="w-[88%] h-[82vh] rounded-[7px] shadow-md flex justify-center items-center  border-none cursor-pointer"
   data-aos="zoom-out"
   data-aos-duration="1500"
   data-aos-once="true"

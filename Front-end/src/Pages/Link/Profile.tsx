@@ -1,5 +1,5 @@
 import Image from "../../assets/bg-1.3d2a7a2d0a1ed5a6e5b206301d008f80.svg";
-function Profile() {
+const  Profile =() =>{
   return (
     <div
       className="justify-center flex items-center bg-[#fff]

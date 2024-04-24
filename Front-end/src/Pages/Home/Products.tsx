@@ -1,68 +1,99 @@
-import { useState } from "react";
-import Modal from "../../Hook/Modal";
+
 import { Link } from "react-router-dom";
 
+const products = [
+  {
+    id:1,
+    img:"",
+    text:"Best Deals",
+  },
+  {
+    id:2,
+    img:"",
+    text:"Refrigerators",
+  },
+  {
+    id:3,
+    img:"",
+    text:"Televisions",
+  },
+  {
+    id:4,
+    img:"",
+    text:"Special Offers",
+  },
+  {
+    id:5,
+    img:"",
+    text:"Fashion Deals",
+  },
+  {
+    id:6,
+    img:"",
+    text:"Generators",
+  },
+  {
+    id:7,
+    img:"",
+    text:"Phones & Tablets",
+  },
+  {
+    id:8,
+    img:"",
+    text:"Computing Deals",
+  },
+  {
+    id:9,
+    img:"",
+    text:"Grocery Deals",
+  },
+  {
+    id:10,
+    img:"",
+    text:"Mobile Accessories",
+  },
+  {
+    id:11,
+    img:"",
+    text:"Home Essentials",
+  },
+  {
+    id:12,
+    img:"",
+    text:"Call to Order",
+  },
+]
+
 const Products = () => {
-  const [open, setOpen] = useState<boolean>(false);
   return (
-    <div className="flex justify-center items-center w-[100%] h-[82vh] bg-[]">
-      <div className="w-[93%] h-[77vh] bg-[#fff] p-2 rounded-[7px] flex gap-4 shadow-md">
-        <div
-          className="flex flex-col bg-[green] w-[16%] h-[36vh] p-2 rounded-[7px] gap-2 hover:shadow-md hover:transition-transform 
-        delay-200 hover:scale-90"
-          data-aos="zoom-in"
-          data-aos-duration="600"
-          data-aos-once="true"
-        >
-          <div className="w-full h-[250px] flex justify-center items-center bg-[#fff] rounded-md"></div>
-          <button onClick={() => setOpen(true)}>Best Deals</button>
-          <Modal open={open} onClose={() => setOpen(false)}>
-            <form action="" className="w-[60%] h-[66vh] bg-[red]">
-              <Link to="/see-products">SeeProducts</Link>
-            </form>
-          </Modal>
+    <div className="flex justify-center items-center w-[100%] h-[87vh] bg-[]">
+      <section className="w-[93%] h-[87vh] bg-[#fff] rounded-[7px] flex  shadow-md flex-wrap justify-center  items-center">
+        <div className="w-[100%] h-[85vh]  flex-wrap justify-between flex  items-center max-sm:w-full">
+
+             {
+              products.map((data) => (
+                 <Link to="/see-products" className="flex justify-center items-center flex-col bg-[red] w-[16%]  max-sm:w-[32%] max-sm:h-[20vh] rounded-[7px] max-sm:flex" key={data.id}>
+                <img src="" alt="" className="w-[93%] h-[40vh] bg-[blue] object-cover flex justify-center items-center border-none rounded-[7px] cursor-pointer max-sm:w-full"/>
+      <Link to="/see-products">          <button className="cursor-pointer">{data.text}</button></Link></Link >
+              ))
+             }
+            
+        
+       
+
         </div>
-        <div className="flex flex-col bg-[green] w-[16%] h-[36vh] p-2 rounded-[7px] gap-2 hover:shadow-md hover:transition-transform delay-200 hover:scale-90 hover:">
-          <div className="w-full h-[250px] flex justify-center items-center bg-[#fff] rounded-md"></div>
-          <button onClick={() => setOpen(true)}>Best Deals</button>
-          <Modal open={open} onClose={() => setOpen(false)}>
-            <form action="" className="w-[60%] h-[66vh] bg-[red]">
-              <Link to="/see-products">SeeProducts</Link>
-            </form>
-          </Modal>
-        </div>
-        <div className="flex flex-col bg-[green] w-[16%] h-[36vh] p-2 rounded-[7px] gap-2 hover:shadow-md hover:transition-transform delay-200 hover:scale-90 hover:">
-          <div className="w-full h-[250px] flex justify-center items-center bg-[#fff] rounded-md"></div>
-          <button onClick={() => setOpen(true)}>Best Deals</button>
-          <Modal open={open} onClose={() => setOpen(false)}>
-            <form action="" className="w-[60%] h-[66vh] bg-[red]">
-              <Link to="/see-products">SeeProducts</Link>
-            </form>
-          </Modal>
-        </div>
-        <div className="flex flex-col bg-[green] w-[16%] h-[36vh] p-2 rounded-[7px] gap-2 hover:shadow-md hover:transition-transform delay-200 hover:scale-90 hover:">
-          <div className="w-full h-[250px] flex justify-center items-center bg-[#fff] rounded-md"></div>
-          <button onClick={() => setOpen(true)}>Best Deals</button>
-          <Modal open={open} onClose={() => setOpen(false)}>
-            <form action="" className="w-[60%] h-[66vh] bg-[red]">
-              <Link to="/see-products">SeeProducts</Link>
-            </form>
-          </Modal>
-        </div>
-        <div className="flex flex-col bg-[green] w-[16%] h-[36vh] p-2 rounded-[7px] gap-2 hover:shadow-md hover:transition-transform delay-200 hover:scale-90 hover:">
-          <div className="w-full h-[250px] flex justify-center items-center bg-[#fff] rounded-md
-          "></div>
-          <button onClick={() => setOpen(true)}
-          className=""
-          
-          >Best Deals</button>
-          <Modal open={open} onClose={() => setOpen(false)}>
-            <form action="" className="w-[60%] h-[66vh] bg-[red]">
-              <Link to="/see-products">SeeProducts</Link>
-            </form>
-          </Modal>
-        </div>
-      </div>
+    
+       
+       
+    
+  
+      
+    
+ 
+  
+        
+      
+      </section>
     </div>
   );
 };
