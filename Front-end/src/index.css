@@ -26,3 +26,8 @@
     -moz-osx-font-smoothing: grayscale;
     -webkit-text-size-adjust: 100%;
 }
+@layer components{
+    .video{
+        @apply px-2 py-3 rounded-md cursor-pointer flex  flex-col gap-2 hover:shadow-md;
+    }
+}
