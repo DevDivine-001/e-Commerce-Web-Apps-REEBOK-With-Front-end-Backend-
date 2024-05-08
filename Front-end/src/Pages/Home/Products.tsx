@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 
 const Products = () => {
@@ -66,7 +67,7 @@ const Products = () => {
 ]
   return<div className="w-[100%] h-auto flex justify-center items-center bg-[]">
      <div className="w-[93%] py-[2px] flex justify-center items-center max-sm:py-[1%] max-lg:py-[3%] bg-[#ffff] rounded-md shadow-md">
-       <div className="grid grid-cols-3 gap-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-6 p-2 max-sm:w-full w-[100%] bg-[] lg:grid-cols-4">
+       <Link to="/see-products" className="grid grid-cols-3 gap-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-6 p-2 max-sm:w-full w-[100%] bg-[] lg:grid-cols-4">
  {Products.map((data)=> (
        <div className="video" key={data .id}>
       
@@ -76,7 +77,7 @@ const Products = () => {
   ))
  }
 
-  </div>
+  </Link>
      </div>
   </div>
 
