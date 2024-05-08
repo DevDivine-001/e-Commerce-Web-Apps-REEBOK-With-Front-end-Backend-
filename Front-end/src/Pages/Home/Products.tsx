@@ -1,121 +1,87 @@
-
-// import { Link } from "react-router-dom";
-
-// const products = [
-//   {
-//     id:1,
-//     img:"",
-//     text:"Best Deals",
-//   },
-//   {
-//     id:2,
-//     img:"",
-//     text:"Refrigerators",
-//   },
-//   {
-//     id:3,
-//     img:"",
-//     text:"Televisions",
-//   },
-//   {
-//     id:4,
-//     img:"",
-//     text:"Special Offers",
-//   },
-//   {
-//     id:5,
-//     img:"",
-//     text:"Fashion Deals",
-//   },
-//   {
-//     id:6,
-//     img:"",
-//     text:"Generators",
-//   },
-//   {
-//     id:7,
-//     img:"",
-//     text:"Phones & Tablets",
-//   },
-//   {
-//     id:8,
-//     img:"",
-//     text:"Computing Deals",
-//   },
-//   {
-//     id:9,
-//     img:"",
-//     text:"Grocery Deals",
-//   },
-//   {
-//     id:10,
-//     img:"",
-//     text:"Mobile Accessories",
-//   },
-//   {
-//     id:11,
-//     img:"",
-//     text:"Home Essentials",
-//   },
-//   {
-//     id:12,
-//     img:"",
-//     text:"Call to Order",
-//   },
-// ]
-
+import img1 from "../../assets/Artboard_1_copy_3-removebg-preview.png"
 const Products = () => {
-  return (
-    <div className="flex justify-center items-center w-[100%] h-[87vh] bg-[]">
-      <section className="w-[93%] h-[87vh] bg-[#fff] rounded-[7px] flex  shadow-md flex-wrap justify-center  items-center p-2">
-        <div className="w-[100%] h-[85vh]  flex-wrap justify-between flex  items-center max-sm:w-full">
-
-          <div className="flex 
-          p-2 bg-[red] flex-col w-[16%] gap-1 max-sm:w-28">
-            <img src="" alt="" className="w-[98%] h-[29vh] flex items-center justify-center max-sm:h-[100px]"/>
-            <button>Best School play</button>
-
-          </div>
-          <div className="flex 
-          p-2 bg-[red] flex-col w-[16%] gap-1 max-sm:w-28">
-            <img src="" alt="" className="w-[98%] h-[29vh] flex items-center justify-center max-sm:h-[100px]"/>
-            <button>Best</button>
-
-          </div>
-          {/* <div className="flex justify-center items-center
-          p-2 bg-[red] flex-col w-[16%] gap-1 max-sm:w-28 max-sm:h-24">
-            <img src="" alt="" className="w-[98%] h-[2vh] flex items-center  justify-center "/>
-            <button>Best Deals</button>
-
-          </div> */}
-
-
-             {/* {
-              products.map((data) => (
-                 <Link to="/see-products" className="flex justify-center items-center flex-col bg-[red] w-[16%]  max-sm:w-[32%] max-sm:h-[20vh] rounded-[7px] max-sm:flex" key={data.id}>
-                <img src="" alt="" className="w-[93%] h-[40vh] bg-[blue] object-cover flex justify-center items-center border-none rounded-[7px] cursor-pointer max-sm:w-full"/>
-      <Link to="/see-products">          <button className="cursor-pointer">{data.text}</button></Link></Link >
-              ))
-             } */}
-            
-        
-       
-
-        </div>
-    
-       
-       
-    
+  const Products = [
+    {
+      id:1,
+      img:img1,
+      products:"Mobile Accessories"
+    },
+    {
+      id:2,
+      img:"",
+      products:"Home Essentials"
+    },
+    {
+      id:3,
+      img:"https://ng.jumia.is/cms/0-1-weekly-cps/0-2024/0-1-thumbnails-update/April-week-18/Artboard_1.png",
+      products:"Best Deals"
+    },
+      {
+    id:4,
+    img:"",
+   products:"Phones & Tablets",
+  },
+    {
+    id:5,
+    img:"",
+   products:"Computing Deals",
+  },
+    {
+    id:6,
+    img:"",
+   products:"Grocery Deals",
+  },
+    {
+    id:7,
+    img:"",
+   products:"Generators",
+  },
+    {
+    id:8,
+    img:"https://ng.jumia.is/cms/0-1-weekly-cps/0-2024/0-1-thumbnails-update/April-week-18/Artboard_1_copy_13.png",
+   products:"Special Offers",
+  },
+    {
+    id:9,
+    img:"",
+   products:"Fashion Deals",
+  },
+    {
+    id:10,
+    img:"https://ng.jumia.is/cms/0-1-weekly-cps/0-2024/0-1-thumbnails-update/April-week-18/Artboard_1_copy_5.png",
+   products:"Televisions",
+  },
+    {
+    id:11,
+    img:"",
+   products:"Refrigerators",
+  },
+  {
+  id:12,
+  img:"",
+  products:"Call to Order",
+  },
   
+]
+  return<div className="w-[100%] h-auto flex justify-center items-center bg-[]">
+     <div className="w-[93%] py-[2px] flex justify-center items-center max-sm:py-[1%] max-lg:py-[3%] bg-[#ffff] rounded-md shadow-md">
+       <div className="grid grid-cols-3 gap-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-6 p-2 max-sm:w-full w-[100%] bg-[] lg:grid-cols-4">
+ {Products.map((data)=> (
+       <div className="video" key={data .id}>
       
-    
- 
+<img src={data.img} className="w-[100%]  py-[0px] px-[0px] bg-[#0099FF] flex items-center justify-center rounded-md object-cover max-sm:px-[0%]" alt="" />
+       <div className="flex items-center justify-center text-wrap"> <button className="text-sm sm:text-sm text-[px] text-wrap text-center max-lg:text-bold">{data.products}</button></div>
+       </div>
+  ))
+ }
+
+  </div>
+     </div>
+  </div>
+
   
-        
-      
-      </section>
-    </div>
-  );
+  ;
 };
 
 export default Products;
+

@@ -1,4 +1,5 @@
 import   {FaShopify}  from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const productIcons = [
 
@@ -74,7 +75,7 @@ const ProductsNavLink = () => {
    {
     productIcons.map((data) => (
              <div className="flex items-center bg-[] gap-3 text-slate-700" key={data.id}>
-<div><FaShopify/></div> <span className="hover:text-[#fea928] cursor-pointer">{data.text}</span>
+<div><FaShopify/></div> <span className="hover:text-[#fea928] cursor-pointer"><Link to="/see-products">{data.text}</Link></span>
         </div>
     ))
    }
