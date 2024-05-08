@@ -1,69 +1,65 @@
-import img1 from "../../assets/Artboard_1_copy_3-removebg-preview.png"
-import img4 from "../../assets/Artboard_1_copy_2-removebg-preview.png"
-import img7 from "../../assets/Artboard_1_copy_8.png"
-import img12 from "../../assets/Made-in-naija.jpeg"
-import img5 from "../../assets/Artboard_1_copy_7.png"
-import img2 from "../../assets/Artboard_1_copy_4.png"
+
+
 const Products = () => {
   const Products = [
     {
       id:1,
-      img:img1,
+      img:"https://i.im.ge/2024/05/08/ZVuvjc.Artboard-1-copy-3-removebg-preview.png",
       products:"Computing Deals"
     },
     {
       id:2,
-      img:img2,
+      img:"https://i.im.ge/2024/05/08/ZVFChG.Artboard-1-copy-removebg-preview.png",
       products:"Home Essentials"
     },
     {
       id:3,
-      img:"https://ng.jumia.is/cms/0-1-weekly-cps/0-2024/0-1-thumbnails-update/April-week-18/Artboard_1.png",
+      img:"https://i.im.ge/2024/05/08/ZVFkG8.Artboard-1-removebg-preview.png",
       products:"Best Deals"
     },
       {
     id:4,
-    img:img4,
+    img:"https://i.im.ge/2024/05/08/ZVFQsy.Artboard-1-copy-2-removebg-preview.png",
    products:"Phones & Tablets",
   },
     {
     id:5,
-    img:img5,
+    img:"https://i.im.ge/2024/05/08/ZVFOo9.Artboard-1-copy-7-removebg-preview.png",
    products:"Mobile Accessories",
   },
     {
     id:6,
-    img:"",
+    img:"https://i.im.ge/2024/05/08/ZVFrmF.Artboard-1-copy-4-removebg-preview.png",
    products:"Grocery Deals",
   },
     {
     id:7,
-    img:img7,
+    img:"https://i.im.ge/2024/05/08/ZVF1hX.Artboard-1-copy-8-removebg-preview.png",
    products:"Generators",
   },
     {
     id:8,
-    img:"https://ng.jumia.is/cms/0-1-weekly-cps/0-2024/0-1-thumbnails-update/April-week-18/Artboard_1_copy_13.png",
+    img:"https://i.im.ge/2024/05/08/ZVOZdr.Artboard-1-copy-13-removebg-preview.png",
    products:"Special Offers",
   },
     {
     id:9,
-    img:"",
+    img:"https://i.im.ge/2024/05/08/ZVODCJ.Artboard-1-copy-6-removebg-preview.png",
    products:"Fashion Deals",
   },
     {
     id:10,
-    img:"https://ng.jumia.is/cms/0-1-weekly-cps/0-2024/0-1-thumbnails-update/April-week-18/Artboard_1_copy_5.png",
+    img:"https://i.im.ge/2024/05/08/ZVFPwT.Artboard-1-copy-5-removebg-preview.png",
    products:"Televisions",
   },
     {
     id:11,
-    img:"",
+    img:"https://i.im.ge/2024/05/08/ZVOQcP.Artboard-1-copy-9-removebg-preview.png",
    products:"Refrigerators",
   },
   {
   id:12,
-  img:img12,
+  img:"https://i.im.ge/2024/05/08/ZVFqaM.Made-in-naija-removebg-preview-1.png",
   products:"Call to Order",
   },
   
