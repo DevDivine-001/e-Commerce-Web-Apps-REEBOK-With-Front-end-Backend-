@@ -11,11 +11,12 @@ import Bannerone from "./Bannerone";
 import SlideBanner from "./SlideBanner";
 import ExploreBanner from "./ExploreBanner";
 import Hero from "./Hero";
+import TopSellingItems from "./TopSellingItems";
 
 const Homepage = () => {
   return (
     <div
-      className="bg-[#fff]
+      className="bg-[#fff] 
     "
       style={{
         backgroundImage: `url(${Image})`,
@@ -23,6 +24,7 @@ const Homepage = () => {
     >
       <Hero/>
       <Products />
+      <TopSellingItems/>
       <Banner />
       <Bannerone/>
       <SlideBanner/>
