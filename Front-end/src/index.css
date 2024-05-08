@@ -31,3 +31,8 @@
         @apply px-2 py-5 rounded-md cursor-pointer flex  flex-col gap-2 hover:shadow-md max-sm:hover:shadow-none;
     }
 }
+@layer components{
+    .TopProducts{
+        @apply px-2 py-5 rounded-md cursor-pointer flex  flex-col gap-2 hover:shadow-md max-sm:hover:shadow-none;
+    }
+}

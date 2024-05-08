@@ -1,14 +1,19 @@
 import img1 from "../../assets/Artboard_1_copy_3-removebg-preview.png"
+import img4 from "../../assets/Artboard_1_copy_2-removebg-preview.png"
+import img7 from "../../assets/Artboard_1_copy_8.png"
+import img12 from "../../assets/Made-in-naija.jpeg"
+import img5 from "../../assets/Artboard_1_copy_7.png"
+import img2 from "../../assets/Artboard_1_copy_4.png"
 const Products = () => {
   const Products = [
     {
       id:1,
       img:img1,
-      products:"Mobile Accessories"
+      products:"Computing Deals"
     },
     {
       id:2,
-      img:"",
+      img:img2,
       products:"Home Essentials"
     },
     {
@@ -18,13 +23,13 @@ const Products = () => {
     },
       {
     id:4,
-    img:"",
+    img:img4,
    products:"Phones & Tablets",
   },
     {
     id:5,
-    img:"",
-   products:"Computing Deals",
+    img:img5,
+   products:"Mobile Accessories",
   },
     {
     id:6,
@@ -33,7 +38,7 @@ const Products = () => {
   },
     {
     id:7,
-    img:"",
+    img:img7,
    products:"Generators",
   },
     {
@@ -58,7 +63,7 @@ const Products = () => {
   },
   {
   id:12,
-  img:"",
+  img:img12,
   products:"Call to Order",
   },
   
