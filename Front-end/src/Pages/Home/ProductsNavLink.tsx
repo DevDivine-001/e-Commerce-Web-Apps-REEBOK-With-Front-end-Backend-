@@ -69,9 +69,12 @@ const productIcons = [
 
 const ProductsNavLink = () => {
   return (
-    <div className="flex w-[17%] bg-[#fff] rounded-[7px] border-none shadow-md gap-[14px] flex-col p-2 max-sm:hidden max-md:hidden max-lg:hidden max-xl:hidden" data-aos="fade-right"
-     data-aos-duration="1500"
-            data-aos-once="true">
+      <div 
+      data-aos="fade-right"
+      data-aos-duration="1500"
+             data-aos-once="true"
+      className="flex w-[17%] bg-[#fff] rounded-[7px] border-none shadow-md gap-[14px] flex-col p-2 max-sm:hidden max-md:hidden max-lg:hidden max-xl:hidden"
+            >
    {
     productIcons.map((data) => (
              <div className="flex items-center bg-[] gap-3 text-slate-700" key={data.id}>

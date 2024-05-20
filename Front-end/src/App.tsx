@@ -14,6 +14,15 @@ const App = () => {
       });
       AOS.refresh();
     }, []);
+  //   React.useEffect(() => {
+  //   AOS.init({
+  //     offset: 100,
+  //     duration: 900,
+  //     easing: "ease-in-sine",
+  //     delay: 300,
+  //   });
+  //   AOS.refresh();
+  // }, []);
   return <div>
     <RouterProvider router={Router}/>
   </div>;

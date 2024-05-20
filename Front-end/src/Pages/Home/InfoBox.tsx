@@ -16,7 +16,7 @@ const InfoBox = () => {
             data-aos-once="true">
       
         <div className="w-full gap-2 flex bg-[#000] border-none">
-
+          
         </div>
 
       </div>

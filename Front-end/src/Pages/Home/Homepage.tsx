@@ -12,6 +12,8 @@ import SlideBanner from "./SlideBanner";
 import ExploreBanner from "./ExploreBanner";
 import Hero from "./Hero";
 import TopSellingItems from "./TopSellingItems";
+import TechWeek from "./TechWeek";
+import LimitedDeals from "./LimitedDeals";
 
 const Homepage = () => {
   return (
@@ -26,6 +28,8 @@ const Homepage = () => {
       <Products />
       <TopSellingItems/>
       <Banner />
+      <LimitedDeals/>
+      <TechWeek/>,
       <Bannerone/>
       <SlideBanner/>
       <ExploreBanner/>
