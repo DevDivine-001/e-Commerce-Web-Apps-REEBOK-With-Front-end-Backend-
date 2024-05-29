@@ -33,9 +33,15 @@
 }
 @layer components{
     .TopProducts{
-        @apply px-2 py-7  rounded-md cursor-pointer flex  flex-col gap-2 bg-[] hover:shadow-md max-sm:hover:shadow-none max-md:hover:shadow-none max-lg:hover:shadow-none max-xl:hover:shadow-none;
+        @apply p-2 rounded-md cursor-pointer flex  flex-col gap-2 bg-[] hover:shadow-md max-sm:hover:shadow-none max-md:hover:shadow-none max-lg:hover:shadow-none max-xl:hover:shadow-none;
     }
 }
+@layer components{
+    .SeeProducts{
+        @apply  p-2 w-[100%]  rounded-md cursor-pointer flex  flex-col gap-2 bg-[#ddd] hover:shadow-md max-sm:hover:shadow-none max-md:hover:shadow-none max-lg:hover:shadow-none max-xl:hover:shadow-none  hover:scale-[1.02] transition-all duration-300 ;
+    }
+}
+
 @layer components{
     .Products{
         @apply px-2 py-7  rounded-md cursor-pointer flex  flex-col gap-2 bg-[] hover:shadow-md max-sm:hover:shadow-none max-md:hover:shadow-none max-lg:hover:shadow-none max-xl:hover:shadow-none;
